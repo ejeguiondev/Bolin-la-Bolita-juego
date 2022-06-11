@@ -1,0 +1,357 @@
+body {
+    padding:0;
+    margin: 0;
+    background:linear-gradient(brown,red);
+}
+.bolin {
+    background:white;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#EmpesarDenuevo1 {
+    border:1px solid black;
+    padding:200px 50px;
+    color:black;
+    background:rgb(241, 81, 81);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: 0.2s;
+}
+#EmpesarDenuevo2 {
+    border:1px solid black;
+    padding:300px 10px;
+    background:rgb(241, 71, 71);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40px;
+    transition:0.2s;
+}
+#EmpesarDenuevo2:hover{
+    box-shadow: 20px 20px;
+    background:rgb(158, 12, 12);
+}
+#EmpesarDenuevo1:hover {
+    box-shadow: 20px 20px;
+    background:rgb(170, 5, 5);
+}
+.obstaculo1Nivel1 {
+    background:black;
+    left:200px;
+    height: 700px;
+    width: 200px;
+    position:absolute;
+    border-radius: 20px;
+}
+.obstaculo2Nivel1 {
+    background:black;
+    left:500px;
+    top:200px;
+    height: 790px;
+    width: 200px;
+    position:absolute;
+    border-radius: 20px;
+}
+.obstaculo3Nivel1 {
+    background:black;
+    position:absolute;
+    left:500px;
+    height: 150px;
+    width: 1000px;
+    border-radius: 20px;
+}
+.obstaculoArribaNivel1 {
+    background:black;
+    height: 120px;
+    width: 1300px;
+    position:absolute;
+    border-radius: 20px;
+}
+.obstaculo4Nivel1 {
+    background:black;
+    position:absolute;
+    height: 900px;
+    width:650px;
+    left:718px;
+    border-radius: 20px;
+}
+.LineaDeMeta1 {
+    background:white;
+    height: 80px;
+    width: 80px;
+    position:absolute;
+    left: 89%;
+    border-radius: 20px;
+}
+.LineaDeMeta2 {
+    background:white;
+    height: 80px;
+    width: 80px;
+    position:absolute;
+    border-radius: 20px;
+}
+.obstaculo1Nivel2{
+    background:black;
+    position:absolute;
+    height: 200px;
+    width: 1300px;
+    left:200px;
+    border-radius: 20px;
+}
+.obstaculo2Nivel2 {
+    position:absolute;
+    left:1300px;
+    height: 1000px;
+    width: 100px;
+    background:black;
+    border-radius: 20px;
+}
+#PoderAzulNivel2 {
+    background:transparent;
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    border-radius: 100%;
+    left:1700px;
+    top:300px;
+    animation: arribaAbajo 1s infinite alternate;
+}
+@keyframes arribaAbajo {
+    0%{}
+    25%{top:320px;}
+    50%{top:300px;}
+    75%{top:320px;}
+    100%{top:300px;}
+}
+.obstaculo3Nivel2 {
+    position:absolute;
+    left:1100px;
+    height: 1000px;
+    width: 100px;
+    background:black;
+    border-radius: 20px;
+}
+.obstaculo4Nivel2 {
+    position:absolute;
+    left:900px;
+    height: 1000px;
+    width: 100px;
+    background:black;
+    border-radius: 20px;
+}
+.obstaculo5Nivel2 {
+    position:absolute;
+    left:700px;
+    height: 1000px;
+    width: 100px;
+    background:black;
+    border-radius: 20px;
+}
+.LineaDeMeta3 {
+    height: 20px;
+    width: 20px;
+    background:white;
+    position:absolute;
+    left:1800px;
+    border-radius: 20px;
+}
+.Pared1Nivel3 {
+    background:black;
+    position:absolute;
+    height: 50px;
+    width: 500px;
+}
+.Pared2Nivel3 {
+    background:black;
+    position:absolute;
+    height: 50px;
+    width: 500px;
+    top:400px;
+}
+.Pared3Nivel3 {
+    background:black;
+    position:absolute;
+    height:400px;
+    width: 50px;
+}
+.Pared4Nivel3 {
+    background:black;
+    position:absolute;
+    height:450px;
+    width: 50px;
+    left:500px;
+}
+.Enemigo {
+    background:red;
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    left:700px;
+    top:70px;
+    border-radius: 20px;
+    animation:Enemigo 2s infinite alternate;
+    border:1px solid black;
+}
+@keyframes Enemigo {
+    0%{}
+    25%{top:80px;}
+    50%{top:70px;}
+    75%{top:80px;}
+    100%{top:70px;}
+}
+.Aviso1 {
+    background:red;
+    height: 70px;
+    width: 500px;
+    position:absolute;
+    left:20px;
+    top:100px;
+    border-radius: 20px;
+}
+.Aviso2 {
+    background:red;
+    height: 70px;
+    width: 500px;
+    position:absolute;
+    left:20px;
+    top:270px;
+    border-radius: 20px;
+}
+.Ataque1 {
+    background:black;
+    height: 70px;
+    width: 500px;
+    position:absolute;
+    left:20px;
+    top:100px;
+    border-radius: 20px;
+}
+.Ataque2 {
+    background:black;
+    height: 70px;
+    width: 500px;
+    position:absolute;
+    left:20px;
+    top:270px;
+    border-radius: 20px;
+}
+.Aviso3  {
+    background:red;
+    height: 400px;
+    width:70px ;
+    position:absolute;
+    left:130px;
+    top:30px;
+    border-radius: 20px;
+}
+.Aviso4  {
+    background:red;
+    height: 400px;
+    width:70px ;
+    position:absolute;
+    left:320px;
+    top:30px;
+    border-radius: 20px;
+}
+.Ataque3 {
+    background:black;
+    height: 400px;
+    width:70px ;
+    position:absolute;
+    left:130px;
+    top:30px;
+    border-radius: 20px;
+}
+.Ataque4  {
+    background:black;
+    height: 400px;
+    width:70px ;
+    position:absolute;
+    left:320px;
+    top:30px;
+    border-radius: 20px;
+}
+.AvisoCirculo {
+    background:red;
+    position:absolute;
+    height:470px;
+    width: 570px;
+    border-radius: 100%;
+    left:45px;
+    top:60px;
+}
+.AtaqueCirculo {
+    background:black;
+    position:absolute;
+    height: 470px;
+    width: 570px;
+    border-radius: 100%;
+    left:45px;
+    top:60px;
+}
+.Pared1Nivel3Animacion {
+    background:black;
+    position:absolute;
+    height: 50px;
+    width: 500px;
+    animation:bajar 2s infinite;
+}
+@keyframes bajar {
+    from {
+        height: 50px;
+    }
+    to {
+        height: 500px;
+    }
+}
+.Lobby {
+    height:935px;
+    width: 1917px;
+    background:linear-gradient(brown,red);
+}
+.PlayButton {
+    border:0px;
+    background:transparent;
+    color:greenyellow;
+    font-size: 60px;
+    position:absolute;
+    top:190px;
+    left:20px;
+    transition: 0.2s;
+}
+.PlayButton:hover {
+    color:green;
+}
+.OptionButton {
+    border:0px;
+    background:transparent;
+    color:gray;
+    font-size: 60px;
+    position:absolute;
+    top:290px;
+    left:20px;
+    transition: 0.2s;
+}
+.OptionButton:hover {
+    color:black;
+}
+.Opciones {
+    position:absolute;
+    left:650px;
+    border:2px solid black;
+    height: 300px;
+    width: 400px;
+    top:180px;
+}
+.MasOpciones {
+    position:absolute;
+    display:grid;
+    grid-template-columns: auto;
+}
+#Ganaste {
+    position:absolute;
+    left:500px;
+    top:70px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="body">
+    <div class="Lobby" id="Lobby">
+        <h1 style="font-size:70px; position:absolute; color:white; left:320px;">Un juego Frustrantemente divertido</h1>
+        <div class="Bottones" style="position:absolute; top:70px;">
+        <button class="PlayButton" onclick="EmpesarJuego()">Play</button>
+        </div>
+    </div>
+    <div class="Enemigo" id="Enemigo" style="display:none;" onmousemove="GanarElJuego()"></div>
+
+<div onmousemove="myFunction(event)" style="border:1px solid black; height:935px; width:1917px; display:none;" id="Lienso">
+    <div class="bolin" id="bolin"></div>
+    <div id="Nivel1">
+    <h1 style="color:white; position:absolute; left:100px;">Hola, pasa por estos obstaculos para pasar de nivel</h1>
+    <div class="obstaculo1Nivel1" id="obstaculo" onmousemove="Perder()"></div>
+    <div class="obstaculo2Nivel1" onmousemove="Perder()"></div>
+    <div class="obstaculo3Nivel1" onmousemove="Perder()"></div>
+
+    <div class="obstaculoArribaNivel1" onmousemove="Perder()"></div>
+    <div class="obstaculo4Nivel1" onmousemove="Perder()"></div>
+
+    <div class="LineaDeMeta1" id="LineaDeMeta" onmousemove="PasarNivel1()"></div>   
+    </div>
+    <div id="Nivel2" style="display:none;">
+        <div class="LineaDeMeta2" onmousemove="PasarNivel2()" style="position:absolute; left:20px;"></div>
+
+        <div class="obstaculo1Nivel2" onmousemove="Perder2()"></div>
+        <div class="obstaculo2Nivel2" id="SiQuitableConAzul" onmousemove="Perder2()"></div>
+
+        <div class="obstaculo3Nivel2" id="NoQuitableConAzul" onmousemove="Perder2()"></div>
+
+        <div class="obstaculo4Nivel2" id="SiQuitableConAzul2" onmousemove="Perder2()"></div>
+
+        <div class="obstaculo5Nivel2" id="NoQuitableConAzul2" onmousemove="Perder2()"></div>
+
+        <img id="PoderAzulNivel2" onmousemove="PoderAzulNivel2()" src="PocionAzul.webp"/>
+    </div>
+    <div id="Nivel3" style="display:none;">
+    <div class="Pared1Nivel3" id="Pared1Nivel3" onmousemove="Perder3()"></div>
+
+    <div class="Pared1Nivel3Animacion" id="Pared1Nivel3Animacion" onmousemove="Perder3()" style="display:none;"></div>
+
+    <div class="Pared2Nivel3" onmousemove="Perder3()"></div>
+    <div class="Pared3Nivel3" onmousemove="Perder3()"></div>
+    <div class="Pared4Nivel3" onmousemove="Perder3()"></div>
+
+    <div class="Aviso1" id="Aviso1" style="display:none;"></div>
+    <div class="Aviso2" id="Aviso2" style="display:none;"></div>
+    <div class="Ataque1" id="Ataque1" style="display:none;" onmousemove="Perder3()"></div>
+    <div class="Ataque2" id="Ataque2" style="display:none;" onmousemove="Perder3()"></div>
+
+    <div class="Aviso3" id="Aviso3" style="display:none;"></div>
+    <div class="Aviso4" id="Aviso4" style="display:none;"></div>
+    <div class="Ataque3" id="Ataque3" style="display:none;" onmousemove="Perder3()"></div>
+    <div class="Ataque4" id="Ataque4" style="display:none;" onmousemove="Perder3()"></div>
+
+    <div class="AvisoCirculo" id="AvisoCirculo" style="display:none;"></div>
+    <div class="AtaqueCirculo" id="AtaqueCirculo" onmousemove="Perder3()" style="display:none;"></div>
+</div>
+
+    <div id="PantallaDePerder" style="display:none; grid-template-columns: auto; justify-content:center;">
+
+        <h1 style="position:absolute; font-family:cursive; font-size:60px; left:600px;">Has perdido!</h1>
+        <button onclick="EmpesarDenuevo()" id="EmpesarDenuevo1" style="position:absolute; top:200px; left:10px;">Reintentar</button>
+
+    </div>
+    <div id="PantallaDePerder2" style="display:none;">
+        <h1 style="position:absolute; left:600px; color:white; font-family:cursive; font-size:60px;">Has Perdido!</h1>
+        <button onclick="EmpesarDeNuevo2()" style="position:relative; left:1600px;" id="EmpesarDenuevo2">Reintentar</button>
+    </div>
+    <div id="ConseguisteElPoderAzul" style="display:none; position:absolute;;">
+        <h1 style="color:white; position:absolute; left:100px;" id="MensajeAzul">Has Conseguido el poder azul, Preciona "E" y "Q" para poder usarlo</h1>
+    </div>
+</div>
+<div id="Ganaste" style="display:none; background:white; height: 935px; width: 1917px;">
+    <h1>En hora buena, Has ganado :D</h1>
+</div>
+</body>
+</html>
