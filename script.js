@@ -1,3 +1,10 @@
+ 
+  //AUDIO
+ // delete style and event from html
+ // rename function and variables to lowercase
+ // create global varables
+ // create class for Nivel1, 2, 3
+ 
  //AUDIO
  let MuerteAudio = new Audio()
  MuerteAudio.src = "pacman-eating-cherry.mp3"
