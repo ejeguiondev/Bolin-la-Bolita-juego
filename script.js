@@ -7,7 +7,7 @@
  MusicaDeFondo.src = "pixel-perfect-112527.mp3"
  let BottonSonido = new Audio()
  BottonSonido.src = "button-click-off-click.mp3"
- 
+ console.log("hola")
  //OTRAS FUNCIONES
  function myFunction(e) {
     let bolin = document.getElementById("bolin")
