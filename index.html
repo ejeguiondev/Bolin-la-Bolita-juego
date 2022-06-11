@@ -15,7 +15,9 @@
         <button class="PlayButton" onclick="EmpesarJuego()">Play</button>
         </div>
     </div>
-    <div class="Enemigo" id="Enemigo" style="display:none;" onmousemove="GanarElJuego()"></div>
+    <div class="Enemigo" id="Enemigo" style="display:none; " onmousemove="GanarElJuego()">
+    <h1 style="font-size:20px; color:black; display:none;" id="MensajeParaMatarEnemigo">Toca al Enemigo para Eliminarlo</h1>
+    </div>
 
 <div onmousemove="myFunction(event)" style="border:1px solid black; height:935px; width:1917px; display:none;" id="Lienso">
     <div class="bolin" id="bolin"></div>
@@ -78,8 +80,10 @@
         <button onclick="EmpesarDeNuevo2()" style="position:relative; left:1600px;" id="EmpesarDenuevo2">Reintentar</button>
     </div>
     <div id="ConseguisteElPoderAzul" style="display:none; position:absolute;;">
-        <h1 style="color:white; position:absolute; left:100px;" id="MensajeAzul">Has Conseguido el poder azul, Preciona "E" y "Q" para poder usarlo</h1>
+        <h1 style="color:white; position:absolute; left:100px;" id="MensajeAzul">Tienes el poder azul usalo apretando "E" y "Q" para poder quitar algunos bloques</h1>
     </div>
+    <h1 id="Ayuda1" style="color:white; position:absolute; padding:10px; font-family:cursive;">Muevete con el mause, evita tocar las paredes negras y llega al cubo blanco para pasar de nivel</h1>
+    <h1 id="Ayuda3" style="color:white; position:absolute; padding:10px; font-family:cursive; top:500px; display:none;">Cuidado, los objetos rojos seran las alertas y despues de unos segundos <br> se convertiran en bloques, ten cuidado</h1>
 </div>
 <div id="Ganaste" style="display:none; background:white; height: 935px; width: 1917px;">
     <h1>En hora buena, Has ganado :D</h1>

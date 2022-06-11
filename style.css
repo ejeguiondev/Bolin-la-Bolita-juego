@@ -72,9 +72,9 @@ body {
 .obstaculo4Nivel1 {
     background:black;
     position:absolute;
-    height: 900px;
+    height: 880px;
     width:650px;
-    left:718px;
+    left:732px;
     border-radius: 20px;
 }
 .LineaDeMeta1 {
@@ -202,7 +202,7 @@ body {
     100%{top:70px;}
 }
 .Aviso1 {
-    background:red;
+    background:rgb(128, 7, 7);
     height: 70px;
     width: 500px;
     position:absolute;
@@ -211,7 +211,7 @@ body {
     border-radius: 20px;
 }
 .Aviso2 {
-    background:red;
+    background:rgb(128, 7, 7);
     height: 70px;
     width: 500px;
     position:absolute;
@@ -238,7 +238,7 @@ body {
     border-radius: 20px;
 }
 .Aviso3  {
-    background:red;
+    background:rgb(128, 7, 7);
     height: 400px;
     width:70px ;
     position:absolute;
@@ -247,7 +247,7 @@ body {
     border-radius: 20px;
 }
 .Aviso4  {
-    background:red;
+    background:rgb(128, 7, 7);
     height: 400px;
     width:70px ;
     position:absolute;
@@ -274,7 +274,7 @@ body {
     border-radius: 20px;
 }
 .AvisoCirculo {
-    background:red;
+    background:rgb(128, 7, 7);
     position:absolute;
     height:470px;
     width: 570px;

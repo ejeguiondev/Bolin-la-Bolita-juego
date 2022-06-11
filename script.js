@@ -22,6 +22,7 @@
     pantallaPerder.style.display = "block"
     document.getElementById("Nivel1").style.display = "none"
     document.getElementById("bolin").style.display = "none"
+    document.getElementById("Ayuda1").style.display = "none"
     MuerteAudio.play()
   }
   function EmpesarDenuevo(){
@@ -29,6 +30,7 @@
     let pantallaPerder = document.getElementById("PantallaDePerder")
     pantallaPerder.style.display = "none"
     document.getElementById("Nivel1").style.display = "block"
+    document.getElementById("Ayuda1").style.display = "block"
 
     bolin.style.marginLeft = "0px"
     bolin.style.marginTop = "0px"
@@ -37,11 +39,13 @@
   function Perder2(){
     document.getElementById("Nivel2").style.display = "none"
     document.getElementById("PantallaDePerder2").style.display = "block"
+    document.getElementById("ConseguisteElPoderAzul").style.display = "none"
     MuerteAudio.play()
   }
   function EmpesarDeNuevo2(){
     document.getElementById("Nivel2").style.display = "block"
     document.getElementById("PantallaDePerder2").style.display = "none"
+    document.getElementById("ConseguisteElPoderAzul").style.display = "block"
   }
   function Perder3(){
     alert("Perdiste :( empesaras del nivel 1")
@@ -52,6 +56,7 @@
   function PasarNivel1(){
     document.getElementById("Nivel1").style.display = "none"
     document.getElementById("Nivel2").style.display = "grid"
+    document.getElementById("Ayuda1").style.display = "none"
     PocionSonido.play()
     MusicaDeFondo.play()
   }
@@ -63,10 +68,13 @@
     document.getElementById("Lienso").style.width = "500px"
     document.getElementById("Lienso").style.left = "400px"
     document.getElementById("Enemigo").style.display = "block"
+    document.getElementById("ConseguisteElPoderAzul").style.display = "none"
+    document.getElementById("Ayuda3").style.display = "block"
 
     setTimeout(PonerAvisoUnoYDos, 2000)
     setTimeout(PonerAvisoTresYCuatro,4000)
     setTimeout(QuitarAtaquesLentos,7000)
+    setTimeout(QuitarTodo,9000)
     setTimeout(Circulo,10000)
     setTimeout(PonerAvisoUnoYDos,12000)
     setTimeout(PonerAvisoTresYCuatro,14000)
@@ -79,10 +87,6 @@
 function PoderAzulNivel2() {
     document.getElementById("ConseguisteElPoderAzul").style.display = "flex"
     PocionSonido.play()
-    function QuitarTextoPoderAzul(){
-      document.getElementById("ConseguisteElPoderAzul").style.display = "none"
-    }
-    setTimeout(QuitarTextoPoderAzul,3000)
     document.getElementById("PoderAzulNivel2").style.display = "none"
 document.addEventListener("keydown", function(e){
     if (e.keyCode === 69){
@@ -100,8 +104,8 @@ function DetectarBloqueQuitable(){
     document.getElementById("SiQuitableConAzul2").style.display = "none"
     document.getElementById("NoQuitableConAzul").style.display = "block"
     document.getElementById("NoQuitableConAzul2").style.display = "block"
-    document.getElementById("NoQuitableConAzul").style.background = "red"
-    document.getElementById("NoQuitableConAzul2").style.background = "red"
+    document.getElementById("NoQuitableConAzul").style.background = "rgb(99, 5, 5)"
+    document.getElementById("NoQuitableConAzul2").style.background = "rgb(99, 5, 5)"
 }
 function PonerBloqueQuitable(){
     document.getElementById("SiQuitableConAzul").style.display = "block"
@@ -137,21 +141,32 @@ function PonerAvisoTresYCuatro(){
     setTimeout(PonerAtaqueTresYCuatro,1000)
 }
 function QuitarAtaquesLentos(){
+  document.getElementById("Aviso1").style.display = "block"
+  document.getElementById("Aviso2").style.display = "block"
+  document.getElementById("Aviso3").style.display = "block"
+  document.getElementById("Aviso4").style.display = "block"
+
+  document.getElementById("Aviso1").style.height = "140px"
+  document.getElementById("Aviso2").style.height = "140px"
+  document.getElementById("Aviso3").style.width = "140px"
+  document.getElementById("Aviso4").style.width = "140px"  
+    function Quitar(){
     document.getElementById("Ataque1").style.height = "140px"
     document.getElementById("Ataque2").style.height = "140px"
     document.getElementById("Ataque3").style.width = "140px"
-    document.getElementById("Ataque4").style.width = "140px"
-    document.getElementById("Aviso1").style.height = "140px"
-    document.getElementById("Aviso2").style.height = "140px"
-    document.getElementById("Aviso3").style.width = "140px"
-    document.getElementById("Aviso4").style.width = "140px"
-    function Quitar(){
-        document.getElementById("Ataque1").style.display = "none"
-        document.getElementById("Ataque2").style.display = "none"
-        document.getElementById("Ataque3").style.display = "none"
-        document.getElementById("Ataque4").style.display = "none"
+    document.getElementById("Ataque4").style.width = "140px"      
+    document.getElementById("Aviso1").style.display = "none"
+    document.getElementById("Aviso2").style.display = "none"
+    document.getElementById("Aviso3").style.display = "none"
+    document.getElementById("Aviso4").style.display = "none"
     }
     setTimeout(Quitar,1000)
+}
+function QuitarTodo(){
+  document.getElementById("Ataque1").style.display = "none"
+  document.getElementById("Ataque2").style.display = "none"
+  document.getElementById("Ataque3").style.display = "none"
+  document.getElementById("Ataque4").style.display = "none"    
 }
 function Circulo(){
     document.getElementById("AvisoCirculo").style.display = "block"
@@ -171,7 +186,8 @@ function PonerAnimacion(){
     document.getElementById("Pared1Nivel3Animacion").style.display = "block"
     function Ganar(){
         document.getElementById("Lienso").style.display = "none"
-    }
+        document.getElementById("MensajeParaMatarEnemigo").style.display = "block"
+}
     setTimeout(Ganar,500)
 }
 
@@ -181,12 +197,6 @@ function EmpesarJuego(){
   document.getElementById("Lienso").style.display = "block"
   BottonSonido.play()
   MusicaDeFondo.play()
-}
-function PonerOpciones(){
-  document.getElementById("Opciones").style.display = "grid"
-}
-function QuitarOpciones(){
-  document.getElementById("Opciones").style.display = "none"
 }
 function GanarElJuego(){
   document.getElementById("Ganaste").style.display = "block"
